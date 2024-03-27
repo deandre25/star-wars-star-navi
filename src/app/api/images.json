@@ -1,0 +1,34 @@
+{
+  "films": [
+    {
+      "episode_id": 1,
+      "title": "The Phantom Menace",
+      "image": "https://starwars-visualguide.com/assets/img/films/4.jpg"
+    },
+    {
+      "episode_id": 2,
+      "title": "Attack of the Clones",
+      "image": "https://starwars-visualguide.com/assets/img/films/5.jpg"
+    },
+    {
+      "episode_id": 3,
+      "title": "Revenge of the Sith",
+      "image": "https://starwars-visualguide.com/assets/img/films/6.jpg"
+    },
+    {
+      "episode_id": 4,
+      "title": "A New Hope",
+      "image": "https://starwars-visualguide.com/assets/img/films/1.jpg"
+    },
+    {
+      "episode_id": 5,
+      "title": "The Empire Strikes Back",
+      "image": "https://starwars-visualguide.com/assets/img/films/2.jpg"
+    },
+    {
+      "episode_id": 6,
+      "title": "Return of the Jedi",
+      "image": "https://starwars-visualguide.com/assets/img/films/3.jpg"
+    }
+  ]
+}

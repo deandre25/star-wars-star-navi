@@ -2,14 +2,14 @@ import React from 'react';
 import HeroItem from './HeroItem';
 import { Hero } from '@/interfaces/hero-interface';
 
-type Props = {
-  heroes: Hero[]
+type HeroListProps = {
+  heroes: Hero[];
 }
 
-const HeroList: React.FC<Props> = ({ heroes }) => {
+const HeroList: React.FC<HeroListProps> = ({ heroes }) => {
   return (
     <div className="grid grid-cols-3 gap-4">
-      {heroes.map(hero => <HeroItem hero={hero} key={hero.name} />)}
+      {heroes && heroes.map(hero => <HeroItem hero={hero} key={hero.name} />)}
     </div>
   );
 };

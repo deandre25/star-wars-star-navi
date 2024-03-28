@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 import { Hero } from '@/interfaces/hero-interface';
 
-type Props = {
-  hero: Hero
+type HeroItemProps = {
+  hero: Hero;
 }
 
-const HeroItem: React.FC<Props> = ({ hero }) => {
+const HeroItem: React.FC<HeroItemProps> = ({ hero }) => {
   const id = hero.url ? hero.url.match(/\/(\d+)\/$/)?.[1] : '1';
 
   return (

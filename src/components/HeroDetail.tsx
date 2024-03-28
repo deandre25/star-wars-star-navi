@@ -1,16 +1,16 @@
 import { Hero } from '@/interfaces/hero-interface';
 import React from 'react';
 
-interface Props {
-  hero: Hero | null;
+interface HeroDetailProps {
+  hero: Hero;
 }
 
-const HeroDetail: React.FC<Props> = ({ hero }) => {
+const HeroDetail: React.FC<HeroDetailProps> = ({ hero }) => {
   return (
     <>
       {hero && (
         <>
-          <h2 className="text-3xl font-semibold mb-4 text-yellow-300">{hero?.name}</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-yellow-300">{hero.name}</h2>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <h3 className="text-xl font-semibold mb-2 text-yellow-300">Physical Attributes</h3>

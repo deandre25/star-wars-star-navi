@@ -18,3 +18,8 @@ export interface Starship {
   created: string;
   edited: string;
 }
+
+export interface ShipTitle {
+  id: number;
+  name: string;
+}

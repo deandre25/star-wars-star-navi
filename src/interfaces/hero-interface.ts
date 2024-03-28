@@ -7,21 +7,13 @@ export interface Hero {
   hair_color: string;
   skin_color: string;
   homeworld: string;
-  films?: [];
-  species: [];
-  starships: [];
-  vehicles: [];
+  films: number[];
+  species: number[];
+  starships: number[];
+  vehicles: number[];
   created: string;
   edited: string
   height: string;
   mass: string;
   url: string;
-}
-
-export interface HeroData {
-  heroes: Hero[];
-}
-
-export interface HeroDataSingle {
-  hero: Hero;
 }

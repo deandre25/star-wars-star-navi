@@ -4,13 +4,18 @@ export interface Film {
   opening_crawl: string;
   director: string;
   producer: string;
-  release_date: string; // Используйте дату или строку, в зависимости от вашего предпочтения
-  species: string[]; // Массив ссылок на ресурсы видов, если они доступны
-  starships: number[]; // Массив ссылок на ресурсы кораблей, если они доступны
-  vehicles: string[]; // Массив ссылок на ресурсы транспортных средств, если они доступны
-  characters: string[]; // Массив ссылок на ресурсы персонажей, если они доступны
-  planets: string[]; // Массив ссылок на ресурсы планет, если они доступны
+  release_date: string;
+  species: string[]; 
+  starships: number[];
+  vehicles: string[]; 
+  characters: string[];
+  planets: string[]; 
   url: string;
   created: string;
   edited: string;
+}
+
+export interface FilmTitle {
+  id: number;
+  title: string;
 }

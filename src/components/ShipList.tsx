@@ -10,7 +10,7 @@ type Props = {
 }
 
 const ShipList: FC<Props> = async ({ships}) => {
-  const fetchShipTitle: ShipTitle[] = await ShipService.getShipTitleById(ships);
+  const fetchShipTitle = await ShipService.getShipTitleById(ships) as ShipTitle[];
 
   return (
     <>

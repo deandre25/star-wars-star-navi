@@ -8,7 +8,7 @@ type FilmsIdProps = {
 }
 
 const FilmList: FC<FilmsIdProps> = async ({ films }) => {
-  const fetchFilmTitle: FilmTitle[] = await FilmService.getFilmTitleById(films);
+  const fetchFilmTitle = await FilmService.getFilmTitleById(films) as FilmTitle[];
 
   return (
     <>

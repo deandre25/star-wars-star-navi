@@ -1,5 +1,3 @@
-"use client"
-
 import { ShipTitle } from "@/interfaces/starship-interface";
 import { ShipService } from "@/services/axios-service";
 import Link from "next/link";

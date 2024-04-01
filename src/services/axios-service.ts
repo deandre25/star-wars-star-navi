@@ -6,6 +6,8 @@ const API_URL = 'https://sw-api.starnavi.io/';
 
 axios.defaults.baseURL = API_URL;
 
+const filmTitleCache: { [id: number]: FilmTitle } = {};
+
 export const HeroService = {
   async getAllHeroes(page: number = 1) {
     try {
@@ -40,16 +42,19 @@ export const FilmService = {
   },
 
   async getFilmTitleById(films: number[]) {
+    const filmData: FilmTitle[] = [];
     try {
-      const promises = films.map(async (id, index) => {
-        const delay = index * 100;
-        await new Promise(resolve => setTimeout(resolve, delay));
-        const film = await axios.get<Film>(`/films/${id}`);
-        return { id, title: film.data.title };
-      });
-
-      const filmData: FilmTitle[] = await Promise.all(promises);
-      return(filmData);
+      for (const id of films) {
+        if (filmTitleCache[id]) {
+          filmData.push(filmTitleCache[id]);
+        } else {
+          const film = await axios.get<Film>(`/films/${id}`);
+          const filmTitle = { id, title: film.data.title };
+          filmData.push(filmTitle);
+          filmTitleCache[id] = filmTitle;
+        }
+      }
+      return filmData;
     } catch (err) {
       console.error('Error fetching film title:', err);
       return err;

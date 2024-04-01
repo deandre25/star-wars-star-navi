@@ -1,12 +1,11 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import HeroList from '@/components/HeroList';
 import { Hero } from '@/interfaces/hero-interface';
 import { HeroService } from '@/services/axios-service';
-import { useEffect, useState } from 'react';
 
-
-const Home = () => {
+const HeroesPage = () => {
   const [heroes, setHeroes] = useState<Hero[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
@@ -55,4 +54,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HeroesPage;

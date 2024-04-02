@@ -16,7 +16,6 @@ This project is a web application designed to allow users to browse a list of St
 * **Frontend Framework:** [Next.js](https://nextjs.org/)
 * **API Requests:** [Axios](https://axios-http.com/)
 * **UI Library:** [Tailwind CSS](https://tailwindcss.com/)
-* **Graph Visualization:** [React Flow](https://reactflow.dev/)
 * **Testing:** [Jest](https://jestjs.io/)
 * **Dependency Management:** [turborepo](https://turbo.build/)
 ## How to Run

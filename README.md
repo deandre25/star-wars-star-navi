@@ -12,10 +12,13 @@ This project is a web application designed to allow users to browse a list of St
 
 * **Detailed Hero Information:** When a specific hero is clicked, the application displays detailed information in a graph format. The main node represents the selected hero, and links lead from the hero to the films in which they appear. Additionally, links lead from each film to the spacecraft used by the hero in that film.
 
+* **Graph Visualization:** Utilizing React Flow, the application visualizes information in a graph format, providing an intuitive way to explore the relationships between heroes, films, and spacecraft.
+
 ## Technologies Used
 * **Frontend Framework:** [Next.js](https://nextjs.org/)
 * **API Requests:** [Axios](https://axios-http.com/)
 * **UI Library:** [Tailwind CSS](https://tailwindcss.com/)
+* **Graph visualization:** [React Flow](https://reactflow.dev/)
 * **Testing:** [Jest](https://jestjs.io/)
 * **Dependency Management:** [turborepo](https://turbo.build/)
 ## How to Run
